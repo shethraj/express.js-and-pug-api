@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Using plain html in Pug</title> -->
+    <title>TORQUE</title>
+
+    style
+        include ../static/style.css
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/home">HOME</a></li>
+            <li><a href="/market">MARKETPLACE</a></li>
+            <li><a href="/create">CREATE PAGE</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h2> CREATE DIGITAL ASSET</h2>
+        <!-- <p> 
+            | #{content} 
+            | This is a plain html using pug 
+        </p> -->
+
+        <form action="/create" method="post" id="contact">
+            <input type="text" name="name" id="name" placeholder="ASSET NAME">
+            <input type="text" name="description" id="age" placeholder="ASSET DESCRIPTION">
+            <input type="text" name="owner" id="gender" placeholder="ASSET OWNER">
+            <textarea name="price" id="address" cols="30" rows="10" placeholder="PRICE IN ETH"></textarea>
+            <textarea name="more" id="more" cols="30" rows="10" placeholder="ADDITIONAL INFO"></textarea>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
